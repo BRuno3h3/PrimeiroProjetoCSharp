@@ -22,7 +22,7 @@ void ExibirOpcoesDoMenu()
 {
     ExibirMensagemdeBoasVindas();
     Console.WriteLine();
-    Console.WriteLine("Digite 1 para registrar uma bando");
+    Console.WriteLine("Digite 1 para registrar uma banda");
     Console.WriteLine("Digite 2 para mostrar todas as bandas");
     Console.WriteLine("Digite 3 para avaliar uma banda");
     Console.WriteLine("Digite 4 para ver a média de uma banda");

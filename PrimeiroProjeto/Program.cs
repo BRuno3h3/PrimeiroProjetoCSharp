@@ -58,9 +58,7 @@ void CasoOpcaoInvalida()
 void RegistrarBanda()
 {
     Console.Clear();
-    Console.WriteLine("************************");
-    Console.WriteLine("Registro de Bandas");
-    Console.WriteLine("************************");
+    ExibirTituloDaOpcao("Registrar nome da banda");
     Console.WriteLine("");
     Console.Write("Digite o nome da banda: ");
     string nomeBanda = Console.ReadLine()!;
@@ -75,9 +73,7 @@ void RegistrarBanda()
 void MostrarBandasRegistradas()
 {
     Console.Clear();
-    Console.WriteLine("*******************************************");
-    Console.WriteLine("Exibindo todas as bandas registradas");
-    Console.WriteLine("*******************************************");
+    ExibirTituloDaOpcao("Exibindo todos os registros de bandas");
 
     /*for (int i = 0; i < listaDasBandas.Count; i++)
     {
@@ -93,6 +89,16 @@ void MostrarBandasRegistradas()
     Console.ReadKey();
     Console.Clear();
     ExibirOpcoesDoMenu();
+}
+
+void ExibirTituloDaOpcao(string titulo)
+{
+    int quantidadeLetras = titulo.Length;
+    string divideTitulo = string.Empty.PadLeft(quantidadeLetras, '*');
+    Console.WriteLine(divideTitulo);
+    Console.WriteLine(titulo);
+    Console.WriteLine(divideTitulo);
+    Console.WriteLine();
 }
 
 ExibirOpcoesDoMenu();
